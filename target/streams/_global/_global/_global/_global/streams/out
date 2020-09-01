@@ -1,0 +1,39 @@
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [scala / Compile / run] Found inputs: C:\Program[0m[[0m[0minfo[0m] [0m[0m1. Monitoring source files for scala/~run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
+[0mdebug[0m] [0m[0mscala / Compile / run - Accepted event for C:\Program Files (x86)\Programs\SCALA\test.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\test.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / run - Accepted event for C:\Program Files (x86)\Programs\SCALA\test.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\test.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0minfo[0m] [0m[0m1. Monitoring source files for scala/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\test.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\test.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified C:\Program Files (x86)\Programs\SCALA\test.scala (previous stamp: Hash(69e5dadbef5fcb5016130cc958ce6c2fa09516a0), current stamp: Hash(9f4322abbfff9c047444f22643eec154571a3c8e))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: C:\Program Files (x86)\Programs\SCALA\test.scala -> Trigger. Returning: (Update(C:\Program Files (x86)\Programs\SCALA\test.scala, 2020-sep-01 13:25:05.802 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by C:\Program Files (x86)\Programs\SCALA\test.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(C:\Program Files (x86)\Programs\SCALA\test.scala, 2020-sep-01 13:25:05.802 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m2. Monitoring source files for scala/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / run - Accepted event for C:\Program Files (x86)\Programs\SCALA\test.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\test.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / run - Accepted event for C:\Program Files (x86)\Programs\SCALA\test.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\test.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\test.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\test.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / run - Accepted event for C:\Program Files (x86)\Programs\SCALA\test.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\test.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mDropping event for unmodified path C:\Program Files (x86)\Programs\SCALA\test.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path C:\Program Files (x86)\Programs\SCALA\test.scala. This event occurred 3 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: ShowOptions.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: ShowOptions.[0m
+[0m[[0m[0minfo[0m] [0m[0mOptions:[0m
+[0m[[0m[0minfo[0m] [0m[0m  <ctrl-d> : interrupt (exits sbt in batch mode)[0m
+[0m[[0m[0minfo[0m] [0m[0m  <enter>  : interrupt (exits sbt in batch mode)[0m
+[0m[[0m[0minfo[0m] [0m[0m  '?'      : print options[0m
+[0m[[0m[0minfo[0m] [0m[0m  'q'      : quit sbt[0m
+[0m[[0m[0minfo[0m] [0m[0m  'r'      : re-run the command[0m
+[0m[[0m[0minfo[0m] [0m[0m  's'      : return to shell[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
