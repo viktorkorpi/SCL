@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\mandelbrot.scala:13:9: not found: value breakable[0m
-[0m[[0m[31merror[0m] [0m[0m        breakable{ [0m
-[0m[[0m[31merror[0m] [0m[0m        ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\mandelbrot.scala:22:15: not found: value break[0m
-[0m[[0m[31merror[0m] [0m[0m              break[0m
-[0m[[0m[31merror[0m] [0m[0m              ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0m4 deprecations (since 2.13.0)[0m
+[0m[[0m[33mwarn[0m] [0m[0m2 deprecations (since 2.13.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0m6 deprecations in total; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m
