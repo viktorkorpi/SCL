@@ -1,7 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\life.scala:12:16: '<-' expected but ')' found.[0m
-[0m[[0m[31merror[0m] [0m[0m    for(0 to 10){[0m
-[0m[[0m[31merror[0m] [0m[0m               ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\life.scala:17:3: illegal start of simple expression[0m
-[0m[[0m[31merror[0m] [0m[0m  } [0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 2.13.3); re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
