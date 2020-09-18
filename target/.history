@@ -17,3 +17,6 @@ run
 compile
 run
 ~compile
+ompile
+compile
+~compile
