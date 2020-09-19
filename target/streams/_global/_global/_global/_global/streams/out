@@ -1,64 +1,15 @@
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [scl / Compile / compile] Found inputs: C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\*.{java,scala},C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\src\main\java\**\*.{java,scala},C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\src\main\resources\**\*,C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\src\main\scala\**\*.{java,scala},C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\src\main\scala-2.13\**\*.{java,scala}[0m
-[0m[[0m[0minfo[0m] [0m[0m1. Monitoring source files for scl/compile...[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [scala / Compile / compile] Found inputs: /home/pear/Desktop/programs/SCALA/*.{java,scala},/home/pear/Desktop/programs/SCALA/src/main/java/**/*.{java,scala},/home/pear/Desktop/programs/SCALA/src/main/resources/**/*,/home/pear/Desktop/programs/SCALA/src/main/scala/**/*.{java,scala},/home/pear/Desktop/programs/SCALA/src/main/scala-2.13/**/*.{java,scala}[0m
+[0m[[0m[0minfo[0m] [0m[0m1. Monitoring source files for scala/compile...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mDropping event for unmodified path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala. This event occurred 7 ms since the last event for this path.[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala (previous stamp: Hash(5db2c887c5f105bdb60f08e997faa53651dac549), current stamp: Hash(1a84c3aaf83e6fa71f9e06126d74c453bf877941))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala -> Trigger. Returning: (Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala, 2020-sep-18 09:20:34.860 CET),Trigger)[0m
-[0m[[0m[0minfo[0m] [0m[0mBuild triggered by C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala. Running 'compile'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala, 2020-sep-18 09:20:34.860 CET).[0m
-[0m[[0m[0minfo[0m] [0m[0m2. Monitoring source files for scl/compile...[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / compile - Accepted event for /home/pear/Desktop/programs/SCALA/cube.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/pear/Desktop/programs/SCALA/cube.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/pear/Desktop/programs/SCALA/cube.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/pear/Desktop/programs/SCALA/cube.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /home/pear/Desktop/programs/SCALA/cube.scala (previous stamp: Hash(15d253b21fb9e98c78f5230e930ea9d4fe14bd5c), current stamp: Hash(5c9fdf3ea3c1947841a0e9ea4881504711acb4d8))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /home/pear/Desktop/programs/SCALA/cube.scala -> Trigger. Returning: (Update(/home/pear/Desktop/programs/SCALA/cube.scala, 2020-Sep-19 14:46:48.667 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /home/pear/Desktop/programs/SCALA/cube.scala. Running 'compile'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/home/pear/Desktop/programs/SCALA/cube.scala, 2020-Sep-19 14:46:48.667 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m2. Monitoring source files for scala/compile...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala. This event occurred 0 ms since the last event for this path.[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala (previous stamp: Hash(1a84c3aaf83e6fa71f9e06126d74c453bf877941), current stamp: Hash(903c6ae15582054c8445cd837c5358a3c400b387))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala -> Trigger. Returning: (Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala, 2020-sep-18 09:20:44.297 CET),Trigger)[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0minfo[0m] [0m[0mBuild triggered by C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala. Running 'compile'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala, 2020-sep-18 09:20:44.297 CET).[0m
-[0m[[0m[0minfo[0m] [0m[0m3. Monitoring source files for scl/compile...[0m
-[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala. This event occurred 1 ms since the last event for this path.[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala (previous stamp: Hash(903c6ae15582054c8445cd837c5358a3c400b387), current stamp: Hash(970483c74bb43b7689fd09d3735b187febfe268e))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala -> Trigger. Returning: (Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala, 2020-sep-18 09:25:32.185 CET),Trigger)[0m
-[0m[[0m[0minfo[0m] [0m[0mBuild triggered by C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala. Running 'compile'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala, 2020-sep-18 09:25:32.185 CET).[0m
-[0m[[0m[0minfo[0m] [0m[0m4. Monitoring source files for scl/compile...[0m
-[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala. This event occurred 2 ms since the last event for this path.[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mscl / Compile / compile - Accepted event for C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mDropping event for unmodified path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path C:\Users\Ebbe Arildsson\Desktop\Diverse\Program\SCL\irritext2.scala. This event occurred 1 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
