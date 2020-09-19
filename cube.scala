@@ -5,10 +5,15 @@ object cube{
     var points = Vector.fill(1000)(new Point)
 
     def main(args: Array[String]): Unit = {
-        points.foreach(p => {
-            p.project
-            p.draw
-        })
+        for(i <- 0 to 1000){
+            Thread.sleep(10)
+            window.clear
+            points.foreach(p => {
+                p.moveZ
+                p.project
+                p.draw
+            })
+        }
     }
 
     class Point{
@@ -16,7 +21,7 @@ object cube{
 
         var x = (rnd.nextDouble - 0.5) * window.width
         var y = (rnd.nextDouble - 0.5) * window.height
-        var z = rnd.nextDouble * window.width
+        var z = rnd.nextDouble
         var xp = 0
         var yp = 0
 
@@ -24,14 +29,14 @@ object cube{
 
         var scale = 0.0
         var fow = window.width * 0.8
-        var s = 5
+        var s = 10
 
         def moveZ(): Unit = {
-
+            this.z += 0.01
         }
 
         def project(): Unit = {
-            this.scale = this.fow / (this.fow + this.z)
+            this.scale = this.fow / (this.fow + Math.abs(Math.sin(this.z) * window.width))
             this.xp = ((this.x * this.scale) + window.width / 2).toInt
             this.yp = ((this.y * this.scale) + window.height / 2).toInt
             this.c = new Color(this.c.getRed, this.c.getGreen, this.c.getBlue, (255 * scale).toInt)
