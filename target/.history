@@ -55,3 +55,14 @@ compile
 run
 compile
 run
+compile -deprecation
+compile -deprecation;
+run
+compile
+run
+3
+run
+~compile
+run
+compile
+run

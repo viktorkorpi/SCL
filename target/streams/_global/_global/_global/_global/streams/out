@@ -1,15 +1,63 @@
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [scala / Compile / compile] Found inputs: /home/pear/Desktop/programs/SCALA/*.{java,scala},/home/pear/Desktop/programs/SCALA/src/main/java/**/*.{java,scala},/home/pear/Desktop/programs/SCALA/src/main/resources/**/*,/home/pear/Desktop/programs/SCALA/src/main/scala/**/*.{java,scala},/home/pear/Desktop/programs/SCALA/src/main/scala-2.13/**/*.{java,scala}[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [scala / Compile / compile] Found inputs: C:\Program Files (x86)\Programs\SCALA\*.{java,scala},C:\Program Files (x86)\Programs\SCALA\src\main\java\**\*.{java,scala},C:\Program Files (x86)\Programs\SCALA\src\main\resources\**\*,C:\Program Files (x86)\Programs\SCALA\src\main\scala\**\*.{java,scala},C:\Program Files (x86)\Programs\SCALA\src\main\scala-2.13\**\*.{java,scala}[0m
 [0m[[0m[0minfo[0m] [0m[0m1. Monitoring source files for scala/compile...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / compile - Accepted event for /home/pear/Desktop/programs/SCALA/cube.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/home/pear/Desktop/programs/SCALA/cube.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/pear/Desktop/programs/SCALA/cube.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /home/pear/Desktop/programs/SCALA/cube.scala[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /home/pear/Desktop/programs/SCALA/cube.scala (previous stamp: Hash(15d253b21fb9e98c78f5230e930ea9d4fe14bd5c), current stamp: Hash(5c9fdf3ea3c1947841a0e9ea4881504711acb4d8))[0m
-[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /home/pear/Desktop/programs/SCALA/cube.scala -> Trigger. Returning: (Update(/home/pear/Desktop/programs/SCALA/cube.scala, 2020-Sep-19 14:46:48.667 CET),Trigger)[0m
-[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /home/pear/Desktop/programs/SCALA/cube.scala. Running 'compile'.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/home/pear/Desktop/programs/SCALA/cube.scala, 2020-Sep-19 14:46:48.667 CET).[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / compile - Accepted event for C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / compile - Accepted event for C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala (previous stamp: Hash(117d4b4c388316abdace0175e2c265a95d31d24b), current stamp: Hash(fc2e125b49fb0330b49223fa83363b09cea0253e))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala -> Trigger. Returning: (Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala, 2020-sep-21 16:30:44.144 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala. Running 'compile'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala, 2020-sep-21 16:30:44.144 CET).[0m
 [0m[[0m[0minfo[0m] [0m[0m2. Monitoring source files for scala/compile...[0m
 [0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
-[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received input event: Run().[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala. This event occurred 6 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / compile - Accepted event for C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / compile - Accepted event for C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala (previous stamp: Hash(fc2e125b49fb0330b49223fa83363b09cea0253e), current stamp: Hash(f857c6387b158e40a81c4d20fb4176b94ce33e16))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala -> Trigger. Returning: (Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala, 2020-sep-21 16:30:52.672 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala. Running 'compile'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala, 2020-sep-21 16:30:52.672 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m3. Monitoring source files for scala/compile...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala. This event occurred 4 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / compile - Accepted event for C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / compile - Accepted event for C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala (previous stamp: Hash(f857c6387b158e40a81c4d20fb4176b94ce33e16), current stamp: Hash(93ec7846bf09bf45dc44e60600f313af4c852030))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala -> Trigger. Returning: (Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala, 2020-sep-21 16:31:06.490 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala. Running 'compile'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala, 2020-sep-21 16:31:06.490 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m4. Monitoring source files for scala/compile...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala. This event occurred 3 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / compile - Accepted event for C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / compile - Accepted event for C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mDropping event for unmodified path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala. This event occurred 2 ms since the last event for this path.[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / compile - Accepted event for C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mscala / Compile / compile - Accepted event for C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala (previous stamp: Hash(93ec7846bf09bf45dc44e60600f313af4c852030), current stamp: Hash(9be15c9cbf6b2f5da49003bf80dfe10099cc6564))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala -> Trigger. Returning: (Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala, 2020-sep-21 16:31:14.792 CET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala. Running 'compile'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala, 2020-sep-21 16:31:14.792 CET).[0m
+[0m[[0m[0minfo[0m] [0m[0m5. Monitoring source files for scala/compile...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mDiscarding entry for recently updated path C:\Program Files (x86)\Programs\SCALA\imageprocessing.scala. This event occurred 5 ms since the last event for this path.[0m
