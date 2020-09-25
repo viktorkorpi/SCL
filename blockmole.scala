@@ -25,6 +25,8 @@ object BlockWindow {
   }
 
   def rectangle(leftTop: Pos)(size: (Int, Int))(color: JColor = JColor.gray): Unit = {
+    // val yStart = leftTop._1
+    // val yEnd = leftTop._2 + size._1
     for(y <- 0 to size._2){
       for(x <- 0 to size._1){
         block(leftTop._1 + x,leftTop._2 + y)(color)
@@ -72,6 +74,7 @@ object Main {
     BlockWindow.rectangle(0, 10)(size = (30, 40))(Color.soil)
   }
   
+
   def main(args: Array[String]): Unit = {
     drawWorld()
     Mole.dig()
