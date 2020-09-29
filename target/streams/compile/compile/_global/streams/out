@@ -1,10 +1,2 @@
-[0m[[0m[31merror[0m] [0m[0m/home/pear/Desktop/programs/SCALA/blockbattle.scala:39:54: value backgroundColorAtDepth is not a member of object blockbattle.Game.Color[0m
-[0m[[0m[31merror[0m] [0m[0m                window.setBlock(new Pos(x, y), Color.backgroundColorAtDepth(y))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                     ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/pear/Desktop/programs/SCALA/blockbattle.scala:90:80: value _1 is not a member of blockbattle.Pos[0m
-[0m[[0m[31merror[0m] [0m[0m    def setBlock(pos: Pos, color: java.awt.Color): Unit = pixelWindow.fill(pos._1, pos._2, blockSize, blockSize, color)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/pear/Desktop/programs/SCALA/blockbattle.scala:90:88: value _2 is not a member of blockbattle.Pos[0m
-[0m[[0m[31merror[0m] [0m[0m    def setBlock(pos: Pos, color: java.awt.Color): Unit = pixelWindow.fill(pos._1, pos._2, blockSize, blockSize, color)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0m2 deprecations (since 2.13.3); re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

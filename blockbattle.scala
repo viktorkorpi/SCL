@@ -1,20 +1,21 @@
 package blockbattle
-import introprog._
+import introprog.PixelWindow
 import java.awt.{Color => JColor}
 
 object Main {
   def main(args: Array[String]): Unit = {
-    val game = new Game("Per", "Ola")
+    val game = new Game("Left player!", "Right player!")
+    game.start
   }
 }
 
 object Game {
+    val blockSize = 14
+    val skyRange = 0 to 9
     val windowSize = (30, 50)
     val windowTitle = "EPIC BLOCK BATTLE"
-    val blockSize = 14
-    val skyRange    = 0 to 7
-    val grassRange  = 8 to 8
-
+    val grassRange = skyRange.last + 1 to skyRange.last + 1  
+    
     object Color { 
         val black  = new JColor(  0,   0,   0)
         val mole   = new JColor( 51,  51,   0)
@@ -30,16 +31,10 @@ object Game {
 class Game( val leftPlayerName: String  = "LEFT", val rightPlayerName: String = "RIGHT") {
     import Game._
     val window = new BlockWindow(windowSize, windowTitle, blockSize)
-    val leftMole: Mole  = new Mole(leftPlayerName, new Pos(10, 10), (1, 1), Color.mole, new KeyControl("a", "d", "w", "s"))
-    val rightMole: Mole = new Mole(rightPlayerName, new Pos(20, 40), (1, 1), Color.mole, new KeyControl("j", "l", "i", "k"))
+    val leftMole: Mole  = new Mole(leftPlayerName, Pos(0, grassRange.last + 1), (1, 0), Color.mole, KeyControl("a", "d", "w", "s"))
+    val rightMole: Mole = new Mole(rightPlayerName, Pos(windowSize._1 - 1, windowSize._2 - 1), (-1, 0), Color.mole, KeyControl("j", "l", "i", "k"))
 
-    def drawWorld(): Unit = {
-        for(y <- 0 to windowSize._2){
-            for(x <- 0 to windowSize._1){
-                window.setBlock(new Pos(x, y), backgroundColorAtDepth(y))
-            }
-        }
-    }
+    def drawWorld(): Unit = for(y <- 0 to windowSize._2) for(x <- 0 to windowSize._1) window.setBlock(Pos(x, y), backgroundColorAtDepth(y))
 
     def eraseBlocks(x1: Int, y1: Int, x2: Int, y2: Int): Unit = ???
 
@@ -47,20 +42,8 @@ class Game( val leftPlayerName: String  = "LEFT", val rightPlayerName: String = 
         window.setBlock(mole.nextPos, mole.color)
         window.setBlock(mole.pos, Color.tunnel)  
         mole.move() 
+        if(mole.pos.x == windowSize._1 || mole.pos.y == windowSize._2 || mole.pos.x == 0 || mole.pos.y == grassRange.start) mole.reverseDir
     } 
-
-    def handleEvents(): Unit = {
-        var e = window.nextEvent()
-        while(e != BlockWindow.Event.Undefined) {
-            e match{
-                case BlockWindow.Event.KeyPressed(key) => {
-                    println(key)
-                }  // ändra riktning på resp. mullvad
-                case BlockWindow.Event.WindowClosed => quit = false
-            }
-            e = window.nextEvent()
-        }
-    }
 
     var quit = false
     val delayMillis = 80
@@ -70,10 +53,24 @@ class Game( val leftPlayerName: String  = "LEFT", val rightPlayerName: String = 
             handleEvents()
             update(leftMole) 
             update(rightMole)
+            window.write(s"${leftMole.name}: ${leftMole.points}", Pos(0, 0), JColor.black, blockSize)
+            window.write(s"${rightMole.name}: ${rightMole.points}", Pos(0, 3), JColor.black, blockSize)
             val elapsedMillis = (System.currentTimeMillis - t0).toInt
             Thread.sleep((delayMillis - elapsedMillis) max 0)
         }
     }
+   
+    def handleEvents(): Unit = {
+        var e = window.nextEvent()
+        while(e != BlockWindow.Event.Undefined) {
+            e match{
+                case BlockWindow.Event.KeyPressed(key) => if(leftMole.keyControl.has(key)) leftMole.setDir(key) else if(rightMole.keyControl.has(key)) rightMole.setDir(key)
+                case BlockWindow.Event.WindowClosed => quit = true
+            }
+            e = window.nextEvent()
+        }
+    }
+
 
     def start(): Unit = {
         println("Start digging!")
@@ -85,9 +82,8 @@ class Game( val leftPlayerName: String  = "LEFT", val rightPlayerName: String = 
 }
 
 class BlockWindow(val nbrOfBlocks: (Int, Int), val title: String = "BLOCK WINDOW", val blockSize: Int = 14) {
-    import introprog.PixelWindow
     val pixelWindow = new PixelWindow(nbrOfBlocks._1 * blockSize, nbrOfBlocks._2 * blockSize, title)
-    def setBlock(pos: Pos, color: java.awt.Color): Unit = pixelWindow.fill(pos.x, pos.y, blockSize, blockSize, color)
+    def setBlock(pos: Pos, color: java.awt.Color): Unit = pixelWindow.fill(pos.x * blockSize, pos.y * blockSize, blockSize, blockSize, color)
     def getBlock(pos: Pos): java.awt.Color = Game.backgroundColorAtDepth(pos.y)
     def write(text: String, pos: Pos, color: java.awt.Color, textSize: Int = blockSize): Unit = pixelWindow.drawText(text, pos.x * blockSize, pos.y * blockSize, color, textSize)
     def nextEvent(maxWaitMillis: Int = 10): BlockWindow.Event.EventType  = {
@@ -100,8 +96,7 @@ class BlockWindow(val nbrOfBlocks: (Int, Int), val title: String = "BLOCK WINDOW
             case _ => Undefined
         }
     }
-}
-
+} 
 object BlockWindow {
     def delay(millis: Int): Unit = Thread.sleep(millis)
     object Event {
@@ -117,15 +112,16 @@ case class Pos(x: Int, y: Int) {
 }
 
 case class KeyControl(left: String, right: String, up: String, down: String){
-    def direction(key: String): (Int, Int) = ???
-    def has(key: String): Boolean = ???
+    override def toString = s"Keys(left: $left, right: $right, up: $up, down: $down)"
+    def direction(key: String): (Int, Int) = if(key == left) -1 -> 0 else if(key == right) 1 -> 0 else if(key == up) 0 -> -1 else if(key == down) 0 -> 1 else 0 -> 0
+    def has(key: String): Boolean = if(key == left || key == right || key == up || key == down) true else false
 }
 
 class Mole(val name: String, var pos: Pos, var dir: (Int, Int), val color: java.awt.Color, val keyControl: KeyControl){
     var points = 0
-    override def toString = s"Mole[name=$name, pos=$pos, dir=$dir, points=$points]"/**Om keyControl.has(key) så uppdateras riktningen dir enligt keyControl*/
-    def setDir(key: String): Unit = ???/**Uppdaterar dir till motsatta riktningen.*/
-    def reverseDir(): Unit = ???/**Uppdaterar pos så att den blir nextPos*/
-    def move(): Unit = ???/**Ger nästa position enligt riktningen dir utan att uppdatera pos*/
-    def nextPos: Pos = ???
+    override def toString = s"Mole[name=$name, pos=$pos, dir=$dir, points=$points]"
+    def setDir(key: String): Unit = dir = keyControl.direction(key)
+    def reverseDir(): Unit = dir = (dir._1 * -1, dir._2 * -1)
+    def move(): Unit = pos = nextPos
+    def nextPos: Pos = Pos(pos.x + dir._1, pos.y + dir._2)
 }
