@@ -1,8 +1,8 @@
 import java.awt.Color
 
 object sphere{
-  val radius = 300
-  val points = Vector.fill(2000)(new Point)
+  val radius = 200
+  val points = Vector.fill(1000)(new Point)
   val window = new introprog.PixelWindow(radius * 3, radius * 3)
 
   def main(args: Array[String]): Unit = {
