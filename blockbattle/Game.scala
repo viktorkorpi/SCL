@@ -39,7 +39,7 @@ class Game( val leftPlayerName: String  = "LEFT", val rightPlayerName: String = 
         Color.mole2,
         KeyControl("Left", "Right", "Up", "Down")
     )
-    val worms = Vector.tabulate(wormsAmount)(x => new Worm(Pos(0, 0)))
+    val worms = Vector.tabulate(wormsAmount)(x => new Worm)
 
     def drawWorld(): Unit = eraseBlocks(0, 0, windowSize._1, windowSize._2)
 
@@ -51,50 +51,62 @@ class Game( val leftPlayerName: String  = "LEFT", val rightPlayerName: String = 
         }
     }
 
-    def update(mole: Mole): Unit = {
+    def checkNextPos(mole: Mole): Unit = {
         val c = window.getBlock(mole.nextPos) 
         if(c == Color.soil) mole.points += 100
-        else if(c == Color.mole1 || c == Color.mole2) mole.points += 100000
+        else if(c == Color.mole1 || c == Color.mole2) if(winner) mole.points += 100000
         worms.foreach(w => {
             if(w.pos == mole.nextPos){
                 w.teleport
                 mole.points += 1000
             }
         })
-        if(mole.points > maxScore) quit = true 
+    }
 
-        if( mole.pos.x == windowSize._1 || 
-            mole.pos.y == windowSize._2|| 
-            mole.pos.x == -1 || 
-            mole.pos.y == grassRange.start){
-            mole.reverseDir
-        }
+    def update(mole: Mole): Unit = {
+        checkNextPos(mole)
+        if(mole.points > maxScore) quit = true 
+        mole.outside
         window.setBlock(mole.nextPos, mole.color)
         window.setBlock(mole.pos, Color.tunnel) 
         mole.move() 
     } 
 
-    var quit = false
-    val delayMillis = 80
-    def gameLoop(): Unit = {
-        while(!quit) {
-            val t0 = System.currentTimeMillis
-            handleEvents()
-            worms.foreach(w => window.setBlock(w.pos, Color.worm))
-            update(leftMole) 
-            update(rightMole)
-            window.setRectangle(Pos(0, 0), Pos(windowSize._1, skyRange.last), Color.sky)
-            window.write(s"${leftMole.name}: ${leftMole.points}", Pos(0, 0), JColor.black, blockSize)
-            window.write(s"${rightMole.name}: ${rightMole.points}", Pos(0, 3), JColor.black, blockSize)
-            val elapsedMillis = (System.currentTimeMillis - t0).toInt
-            Thread.sleep((delayMillis - elapsedMillis) max 0)
-        }
+    def winner: Boolean = if(Math.random > 0.5) true else false
+
+    def hud: Unit = {
+        window.setRectangle(Pos(0, 0), Pos(windowSize._1, skyRange.last), Color.sky)
+        window.write(s"${leftMole.name}: ${leftMole.points}", Pos(0, 0), JColor.black, blockSize)
+        window.write(s"${rightMole.name}: ${rightMole.points}", Pos(0, 3), JColor.black, blockSize)
+    }
+
+    def updateThings: Unit = {
+        worms.foreach(w => window.setBlock(w.pos, Color.worm))
+        update(leftMole) 
+        update(rightMole)
+    }
+
+    def gameOver: Unit = {
         window.write(
             s"${if(leftMole.points > rightMole.points) leftMole.name else rightMole.name} has won, game over!", 
             Pos(0,skyRange.length / 2), 
             JColor.black, 
             blockSize
         )
+    }
+
+    var quit = false
+    val delayMillis = 80
+    def gameLoop(): Unit = {
+        while(!quit) {
+            val t0 = System.currentTimeMillis
+            handleEvents
+            updateThings
+            hud
+            val elapsedMillis = (System.currentTimeMillis - t0).toInt
+            Thread.sleep((delayMillis - elapsedMillis) max 0)
+        }
+        gameOver
     }
    
     def handleEvents(): Unit = {

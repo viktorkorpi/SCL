@@ -7,4 +7,11 @@ class Mole(val name: String, var pos: Pos, var dir: (Int, Int), val color: java.
     def reverseDir(): Unit = dir = (dir._1 * -1, dir._2 * -1)
     def move(): Unit = pos = nextPos
     def nextPos: Pos = pos.moved(dir)
+    def outside: Unit = {
+        if( pos.x == Game.windowSize._1 || 
+            pos.y == Game.windowSize._2 || 
+            pos.x == -1                 || 
+            pos.y == Game.grassRange.start
+        ) reverseDir
+    }
 }

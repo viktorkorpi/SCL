@@ -1,1 +1,45 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/blockbattle_2.13-0.1.0-SNAPSHOT.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/blockbattle_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/BlockWindow$Event$EventType.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/BlockWindow$Event$EventType.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/Mole.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/Mole.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/Pos.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/Pos.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/BlockWindow$Event$Undefined$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/BlockWindow$Event$Undefined$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/BlockWindow.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/BlockWindow.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/Game$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/Game$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/KeyControl$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/KeyControl$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/Game.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/Game.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/BlockWindow$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/BlockWindow$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/Worm$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/Worm$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/BlockWindow$Event$KeyPressed$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/BlockWindow$Event$KeyPressed$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/KeyControl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/KeyControl.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/Worm.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/Worm.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/Pos$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/Pos$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/Game$Color$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/Game$Color$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/BlockWindow$Event$WindowClosed$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/BlockWindow$Event$WindowClosed$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/BlockWindow$Event$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/BlockWindow$Event$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	blockbattle/BlockWindow$Event$KeyPressed.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/blockbattle/target/scala-2.13/classes/blockbattle/BlockWindow$Event$KeyPressed.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
