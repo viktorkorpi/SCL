@@ -5,7 +5,7 @@ object PokerProbability {
         val tempArr = Array.fill(n)(0)
         for(i <- 0 until n) {
             tempArr(i) = newHand(deck).category
-            progressBar(((i / n) * 100).toInt)
+            progressBar(((i.toDouble / n.toDouble) * 100).toInt)
         }
         count(tempArr)
     }
@@ -24,6 +24,7 @@ object PokerProbability {
         val deck = Deck.full() 
         progressBar(0)
         val frequencies = register(n, deck)
+        progressBar(100)
 
         println("")
         for(i <- Hand.Category.values) {
