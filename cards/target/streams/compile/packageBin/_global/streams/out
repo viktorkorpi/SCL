@@ -1,0 +1,25 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Program Files (x86)\Programs\SCALA\cards\target\scala-2.13\cards_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\cards\target\scala-2.13\classes\cards[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards\Card$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\cards\target\scala-2.13\classes\cards\Card$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards\Card.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\cards\target\scala-2.13\classes\cards\Card.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards\Deck$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\cards\target\scala-2.13\classes\cards\Deck$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards\Deck.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\cards\target\scala-2.13\classes\cards\Deck.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards\Hand$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\cards\target\scala-2.13\classes\cards\Hand$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards\Hand$Category$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\cards\target\scala-2.13\classes\cards\Hand$Category$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards\Hand$Category$Name$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\cards\target\scala-2.13\classes\cards\Hand$Category$Name$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards\Hand.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\cards\target\scala-2.13\classes\cards\Hand.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards\PokerProbability$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\cards\target\scala-2.13\classes\cards\PokerProbability$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	cards\PokerProbability.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\cards\target\scala-2.13\classes\cards\PokerProbability.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

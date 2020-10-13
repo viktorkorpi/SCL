@@ -3,7 +3,7 @@ import base._
 object ProjectName{
     val window = new Window((1000, 1000), "teeeest")
     def main(args: Array[String]): Unit = {
-        //code to execute once
+        //code to execute once before the loop starts
         window.loop()
     }
 }
