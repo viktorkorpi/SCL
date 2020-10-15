@@ -29,7 +29,7 @@ class Deck private(val initCards: Vector[Card]){
         cards(b) = temp
     }
 
-    def shuffle(): Unit = for(i <- 1 until cards.length) swap(i, rnd.nextInt(i))
+    def shuffle(): Unit = for(i <- cards.length - 1 to 0 by -1) swap(i, rnd.nextInt(i + 1))
 } 
 object Deck {
     def empty: Deck = new Deck(Vector())
@@ -37,7 +37,7 @@ object Deck {
     def apply(cards: Seq[Card]): Deck = new Deck(cards.toVector)
 
     def full(): Deck = {
-        var tempSeq = new Array[cards.Card](52) 
+        var tempSeq = new Array[Card](52) 
         for(suit <- Card.suitRange) for(rank <- Card.rankRange) tempSeq(((suit - 1) * Card.rankRange.last) + rank - 1) = Card(rank, suit)
         apply(tempSeq)
     }

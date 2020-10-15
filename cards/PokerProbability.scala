@@ -17,7 +17,7 @@ object PokerProbability {
 
     def progressBar(progress: Int): Unit = print(s"\r[Progress][${"■" * progress}${"-" * (100 - progress)}][$progress%]")
 
-    def count(arr: Array[Int]): Vector[Int] = Array.range(0, 10).distinct.map(x => arr.count(_== x)).toVector
+    def count(arr: Array[Int]): Vector[Int] = Array.range(0, 10).map(x => arr.count(_== x)).toVector
 
     def main(args: Array[String]): Unit = { 
         val n = scala.io.StdIn.readLine("number of iterations: ").toInt
