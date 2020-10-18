@@ -11,7 +11,7 @@ object LifeWindow {
         val WillBeBorn     = new java.awt.Color(40, 0, 0)  
         val Alive          = new java.awt.Color(242, 128, 161)
         val Dead           = java.awt.Color.black
-        val Borders        = java.awt.Color.white
+        val Borders        = new java.awt.Color(150, 150, 150)
     }
 } 
 class LifeWindow(rows: Int, cols: Int){
@@ -34,23 +34,24 @@ class LifeWindow(rows: Int, cols: Int){
     def update(newLife: Life): Unit = {
         val oldLife = life
         life = Life.empty((rows, cols))
-        life.cells.foreachIndex{ ??? }
+        life.cells.foreachIndex{ Life.updated(_, _, Life.apply(_, _)) }
     }
     def handleKey(key: String): Unit = {
         println(key)
-        if(key == "Enter") life = life.evolved(Life.defaultRule)
-        else if(key == " "){
-
-        }
+        if(key == "Enter") update(life.evolved(Life.defaultRule))
+        else if(key == " ") play = !play
         else if(key.toLowerCase == "r") life = Life.random(rows, cols)
         else if(key == "Backspace") life = Life.empty(rows, cols)
+        drawGrid
     }
-    def handleClick(pos: (Int, Int)): Unit = life = life.toggled((pos._1 / blockSize).toInt, (pos._2 / blockSize).toInt)
+    def handleClick(pos: (Int, Int)): Unit = {
+        life = life.toggled((pos._1 / blockSize).toInt, (pos._2 / blockSize).toInt)
+        drawGrid
+    }
     def loopUntilQuit(): Unit = while(!quit) {
         val t0 = System.currentTimeMillis
         if(play) update(life.evolved()) 
         window.awaitEvent(EventMaxWait)
-        drawGrid
         while(window.lastEventType != PixelWindow.Event.Undefined) {
             window.lastEventType match{ 
                 case Event.KeyPressed => handleKey(window.lastKey)

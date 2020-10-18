@@ -36,8 +36,8 @@ object Life {
     def random(dim: (Int, Int)): Life = Life(Matrix(Vector.fill(dim._1)(Vector.tabulate(dim._2)(x => if(Math.random > 0.7) true else false))))
     def defaultRule(row: Int, col: Int, current: Life): Boolean = {
         var neighbours = current.nbrOfNeighbours(row, col)
-        if((neighbours == 3 || neighbours == 2 ) && current.cells(row, col) == true) true
-        else if(neighbours == 3 && current.cells(row, col) == false) true
+        if((neighbours == 3 || neighbours == 2 ) && current.cells(row, col)) true
+        else if(neighbours == 3 && !current.cells(row, col)) true
         else false
     }
 }
