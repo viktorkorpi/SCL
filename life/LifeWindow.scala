@@ -34,7 +34,9 @@ class LifeWindow(rows: Int, cols: Int){
     def update(newLife: Life): Unit = {
         val oldLife = life
         life = Life.empty((rows, cols))
-        life.cells.foreachIndex{ Life.updated(_, _, Life.apply(_, _)) }
+        life.cells.foreachIndex( (r, c) => {
+            life.updated(r, c, newLife.apply(r, c))
+        })
     }
     def handleKey(key: String): Unit = {
         println(key)
@@ -42,6 +44,7 @@ class LifeWindow(rows: Int, cols: Int){
         else if(key == " ") play = !play
         else if(key.toLowerCase == "r") life = Life.random(rows, cols)
         else if(key == "Backspace") life = Life.empty(rows, cols)
+        else if(key.toLowerCase == "p") println(life)
         drawGrid
     }
     def handleClick(pos: (Int, Int)): Unit = {

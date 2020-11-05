@@ -29,7 +29,9 @@ case class Life(cells: Matrix[Boolean]) {
         nextGeneration
     }
     /**Radseparerad text där 0 är levande cell och - är död cell.*/
-    override def toString = ???
+    override def toString = {
+        cells.toString
+    }
 } 
 object Life {
     def empty(dim: (Int, Int)): Life = Life(Matrix(Vector.fill(dim._1)(Vector.fill(dim._2)(false))))

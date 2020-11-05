@@ -6,7 +6,14 @@ case class Matrix[T](data: Vector[Vector[T]]) {
     def apply(row: Int, col: Int): T = data(row)(col)
     def updated(row: Int, col: Int)(value: T): Matrix[T] = Matrix(data.updated(row, data(row).updated(col, value)))
     def foreachIndex(f: (Int, Int) => Unit): Unit = for(row <- 0 until dim._1) for(col <- 0 until dim._2) f(row, col)
-    override def toString = ???
+    override def toString = {
+        var text = ""
+        data.foreach( row => {
+            row.foreach( col => text += s"${if(col.getOrElse(false)) "0" else "-"} ")
+            text += "\n"
+        })
+        text
+    }
 }
 object Matrix {
     def fill[T](dim: (Int, Int))(value: T): Matrix[T] = Matrix[T](Vector.fill(dim._1, dim._2)(value))
