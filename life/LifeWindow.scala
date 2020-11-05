@@ -28,8 +28,8 @@ class LifeWindow(rows: Int, cols: Int){
         window.fill(row * blockSize, col * blockSize, blockSize, blockSize, if(life.cells(row, col)) Color.Alive else Color.Dead)
     } 
     def drawLines(): Unit = {
-        for(x <- 0 to (cols) * blockSize by blockSize) window.line(x, 0, x, cols * blockSize, Color.Borders)
-        for(y <- 0 to (rows) * blockSize by blockSize) window.line(0, y, rows * blockSize, y, Color.Borders)
+        for(x <- 0 to cols * blockSize by blockSize) window.line(x, 0, x, cols * blockSize, Color.Borders)
+        for(y <- 0 to rows * blockSize by blockSize) window.line(0, y, rows * blockSize, y, Color.Borders)
     }
     def update(newLife: Life): Unit = {
         val oldLife = life
