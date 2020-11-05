@@ -34,13 +34,11 @@ class LifeWindow(rows: Int, cols: Int){
     def update(newLife: Life): Unit = {
         val oldLife = life
         life = Life.empty((rows, cols))
-        life.cells.foreachIndex( (r, c) => {
-            life.updated(r, c, newLife.apply(r, c))
-        })
+        life.cells.foreachIndex((r, c) => life = life.updated(r, c, newLife(r, c)))
     }
     def handleKey(key: String): Unit = {
         println(key)
-        if(key == "Enter") update(life.evolved(Life.defaultRule))
+        if(key == "Enter") update(life.evolved())
         else if(key == " ") play = !play
         else if(key.toLowerCase == "r") life = Life.random(rows, cols)
         else if(key == "Backspace") life = Life.empty(rows, cols)
@@ -53,7 +51,10 @@ class LifeWindow(rows: Int, cols: Int){
     }
     def loopUntilQuit(): Unit = while(!quit) {
         val t0 = System.currentTimeMillis
-        if(play) update(life.evolved()) 
+        if(play) {
+            update(life.evolved()) 
+            drawGrid
+        }
         window.awaitEvent(EventMaxWait)
         while(window.lastEventType != PixelWindow.Event.Undefined) {
             window.lastEventType match{ 

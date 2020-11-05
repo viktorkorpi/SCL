@@ -9,7 +9,7 @@ case class Matrix[T](data: Vector[Vector[T]]) {
     override def toString = {
         var text = ""
         data.foreach( row => {
-            row.foreach( col => text += s"${if(col.getOrElse(false)) "0" else "-"} ")
+            row.foreach( col => text += s"${if(col == false) "0" else "-"} ")
             text += "\n"
         })
         text

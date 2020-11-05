@@ -1,1 +1,23 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /home/pear/Desktop/programs/SCALA/life/target/scala-2.13/life_2.13-0.1.0-SNAPSHOT.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/pear/Desktop/programs/SCALA/life/target/scala-2.13/life_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	life[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/life/target/scala-2.13/classes/life[0m
+[0m[[0m[0mdebug[0m] [0m[0m	life/LifeWindow$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/life/target/scala-2.13/classes/life/LifeWindow$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	life/LifeWindow$Color$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/life/target/scala-2.13/classes/life/LifeWindow$Color$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	life/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/life/target/scala-2.13/classes/life/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	life/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/life/target/scala-2.13/classes/life/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	life/Life$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/life/target/scala-2.13/classes/life/Life$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	life/Matrix.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/life/target/scala-2.13/classes/life/Matrix.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	life/Matrix$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/life/target/scala-2.13/classes/life/Matrix$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	life/Life.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/life/target/scala-2.13/classes/life/Life.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	life/LifeWindow.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/pear/Desktop/programs/SCALA/life/target/scala-2.13/classes/life/LifeWindow.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
