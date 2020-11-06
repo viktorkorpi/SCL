@@ -3,7 +3,7 @@ import introprog.PixelWindow
 import introprog.PixelWindow.Event
 object LifeWindow {
     val EventMaxWait = 1
-    var NextGenerationDelay = 200
+    var NextGenerationDelay = 0
     val blockSize = 20
     object Color {
         val UnderPopulated = java.awt.Color.cyan  
@@ -17,44 +17,31 @@ object LifeWindow {
 class LifeWindow(rows: Int, cols: Int){
     import LifeWindow._
     var life = Life.random(rows, cols)
-    val window: PixelWindow = new PixelWindow(rows * blockSize + 1, cols * blockSize + 1, "Life")
+    val window: PixelWindow = new PixelWindow(rows * blockSize + 1, cols * blockSize + 1, "Life", Color.Borders)
     var quit = false
     var play = false 
-    def drawGrid(): Unit = {
-        life.cells.foreachIndex(drawCell(_, _))
-        drawLines
+    def drawGrid(): Unit = life.cells.foreachIndex(drawCell(_, _))
+    def drawCell(row: Int, col: Int): Unit = window.fill(row * blockSize + 1, col * blockSize + 1, blockSize - 1, blockSize - 1, getColor(row, col))
+    def getColor(row: Int, col: Int): java.awt.Color = {
+        val n = life.nbrOfNeighbours(row, col)
+        if(n > 3 && life.cells(row, col)) Color.OverPopulated
+        else if(n < 2 && life.cells(row, col)) Color.UnderPopulated
+        else if(n == 3 && !life.cells(row, col)) Color.WillBeBorn
+        else if(life.cells(row, col)) Color.Alive 
+        else Color.Dead
     }
-    def drawCell(row: Int, col: Int): Unit = {
-        window.fill(row * blockSize, col * blockSize, blockSize, blockSize, if(life.cells(row, col)) Color.Alive else Color.Dead)
-    } 
-    def drawLines(): Unit = {
-        for(x <- 0 to cols * blockSize by blockSize) window.line(x, 0, x, cols * blockSize, Color.Borders)
-        for(y <- 0 to rows * blockSize by blockSize) window.line(0, y, rows * blockSize, y, Color.Borders)
-    }
-    def update(newLife: Life): Unit = {
-        val oldLife = life
-        life = Life.empty((rows, cols))
-        life.cells.foreachIndex((r, c) => life = life.updated(r, c, newLife(r, c)))
-    }
+    def update(newLife: Life): Unit = life = newLife
     def handleKey(key: String): Unit = {
-        println(key)
         if(key == "Enter") update(life.evolved())
         else if(key == " ") play = !play
-        else if(key.toLowerCase == "r") life = Life.random(rows, cols)
-        else if(key == "Backspace") life = Life.empty(rows, cols)
+        else if(key.toLowerCase == "r") update(Life.random(rows, cols))
+        else if(key == "Backspace") update(Life.empty(rows, cols))
         else if(key.toLowerCase == "p") println(life)
-        drawGrid
     }
-    def handleClick(pos: (Int, Int)): Unit = {
-        life = life.toggled((pos._1 / blockSize).toInt, (pos._2 / blockSize).toInt)
-        drawGrid
-    }
+    def handleClick(pos: (Int, Int)): Unit = life = life.toggled((pos._1 / blockSize).toInt, (pos._2 / blockSize).toInt)
     def loopUntilQuit(): Unit = while(!quit) {
         val t0 = System.currentTimeMillis
-        if(play) {
-            update(life.evolved()) 
-            drawGrid
-        }
+        if(play) update(life.evolved()) 
         window.awaitEvent(EventMaxWait)
         while(window.lastEventType != PixelWindow.Event.Undefined) {
             window.lastEventType match{ 
@@ -65,6 +52,7 @@ class LifeWindow(rows: Int, cols: Int){
             }
             window.awaitEvent(EventMaxWait)
         } 
+        drawGrid
         val elapsed = System.currentTimeMillis - t0
         Thread.sleep((NextGenerationDelay - elapsed) max 0)
     }

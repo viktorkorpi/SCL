@@ -26,6 +26,7 @@ case class Life(cells: Matrix[Boolean]) {
 } 
 object Life {
     def empty(dim: (Int, Int)): Life = Life(Matrix.fill(dim)(false))
+    def full(dim: (Int, Int)): Life = Life(Matrix.fill(dim)(true))
     def random(dim: (Int, Int)): Life = Life(Matrix(Vector.fill(dim._1, dim._2)(Math.random > 0.7)))
     def defaultRule(row: Int, col: Int, current: Life): Boolean = {
         var neighbours = current.nbrOfNeighbours(row, col)

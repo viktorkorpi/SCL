@@ -8,9 +8,10 @@ object Main {
     Press SPACE to toggle play/stop.
     Press R to create random life.
     Press BACKSPACE to clear life.
+    Press P to print life.
     Close window to exit.
     """
-    val dim = (25, 25)
+    val dim = (15, 20)
 
     def main(args: Array[String]): Unit = {
         println(help)

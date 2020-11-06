@@ -1,2 +1,5 @@
-[0m[[0m[33mwarn[0m] [0m[0m4 deprecations (since 2.13.3); re-run with -deprecation for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pear/Desktop/programs/SCALA/life/LifeWindow.scala:23:60: not enough arguments for method drawCell: (row: Int, col: Int): Unit.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters row, col.[0m
+[0m[[0m[31merror[0m] [0m[0m    def drawGrid(): Unit = life.cells.foreachIndex(drawCell())[0m
+[0m[[0m[31merror[0m] [0m[0m                                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
