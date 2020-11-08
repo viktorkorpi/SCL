@@ -1,0 +1,13 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\fluid_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fluid[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fluid\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fluid\Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid\Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fluid\Matrix$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid\Matrix$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fluid\Matrix.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid\Matrix.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

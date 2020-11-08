@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\fluid\Matrix.scala:11:21: ':' expected but '.' found.[0m
+[0m[[0m[31merror[0m] [0m[0m    def fill[T](Main.dim: (Int, Int))(value: T): Matrix[T] = Matrix[T](Vector.fill(Main.dim._1, Main.dim._2)(value))[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\fluid\Matrix.scala:12:1: identifier expected but '}' found.[0m
+[0m[[0m[31merror[0m] [0m[0m}[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
