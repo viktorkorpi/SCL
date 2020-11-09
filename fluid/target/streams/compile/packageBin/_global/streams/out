@@ -2,12 +2,14 @@
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	fluid[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fluid\Fluid.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid\Fluid.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	fluid\Main$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid\Main$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	fluid\Main.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid\Main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	fluid\Matrix$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid\Matrix$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	fluid\Matrix.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid\Matrix.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fluid\Vektor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid\Vektor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	fluid\Vektor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\fluid\target\scala-2.13\classes\fluid\Vektor.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
