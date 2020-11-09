@@ -2,11 +2,13 @@ package fluid
 
 object Main {
     //Global variables
-    val size = (50, 50)
-    val diffusion = 1
-    val viscosity = 1
+    val iterations = 16
+    val resolution = 128
+    val scale = 8
 
     def main(args: Array[String]): Unit = {
-        println("working")
+        val window = FluidWindow(new Fluid(0.2, 0, 0.0000001))
+        window.loop
+        println("finished")
     }
 }
