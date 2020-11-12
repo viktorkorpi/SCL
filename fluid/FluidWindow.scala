@@ -11,12 +11,11 @@ case class FluidWindow(fluid: Fluid){
 
     def draw(): Unit = {
         drawDensity
-        //drawVelocity
+        drawVelocity
     }
 
     def update(): Unit = {
         for(cy <- -1 to 1; cx <- -1 to 1) fluid.addDensity((N / 2) + cx, (N / 2) + cy)(500)
-        //fluid.addVelocity(N / 2, N / 2)(Math.cos(t.toRadians) / 10, Math.sin(t.toRadians) / 10)
         fluid.step
         draw
         t += 0.01
@@ -24,8 +23,17 @@ case class FluidWindow(fluid: Fluid){
 
     def drawDensity(): Unit = {
         for(i <- 0 until N; j <- 0 until N){
-            val C = stretch(fluid.density(i)(j), -1000, 1000, 0, 254).toInt
+            val C = limit(fluid.density(i)(j), 0, 255).toInt
             w.fill(i * s, j * s, s, s, new Color(C, C, C))
+        }
+    }
+
+    def drawVelocity(): Unit = {
+        val velRes = 1
+        for(i <- 0 until N by velRes; j <- 0 until N by velRes){
+            val x = limit(fluid.velocityX(i)(j), 0, velRes).toInt
+            val y = limit(fluid.velocityY(i)(j), 0, velRes).toInt
+            w.line(i * s, j * s, x + i * s, y + j * s, java.awt.Color.RED)
         }
     }
 
@@ -37,6 +45,11 @@ case class FluidWindow(fluid: Fluid){
     val EventMaxWait = 1
     val NextStepDelay = 200
     def loop(): Unit = while(!quit) {
+        var doneOnce = false
+        if(!doneOnce){
+            fluid.addVelocity(N / 2, N / 2)(Math.cos(t.toRadians), Math.sin(t.toRadians))
+            doneOnce = true
+        }
         val t0 = System.currentTimeMillis 
         w.awaitEvent(EventMaxWait)
         while(w.lastEventType != PixelWindow.Event.Undefined) {
@@ -59,4 +72,6 @@ case class FluidWindow(fluid: Fluid){
         val offset = -A * (D - C) / (B - A) + C
         p * scale + offset
     }
+
+    def limit(x: Double, min: Double, max: Double): Double = if(x >= max) max else if(x <= min) min else x
 }

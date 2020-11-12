@@ -7,7 +7,7 @@ object Main {
     val scale = 8
 
     def main(args: Array[String]): Unit = {
-        val window = FluidWindow(new Fluid(0.2, 0, 0.0000001))
+        val window = FluidWindow(new Fluid(0.0002, 0, 0.0000001))
         window.loop
         println("finished")
     }
