@@ -4,28 +4,30 @@ import introprog.PixelWindow.Event
 import java.awt.Color
 
 case class FluidWindow(fluid: Fluid, N: Int, s: Int){
-    val w = new PixelWindow(N * s, N * s, "Fluid Simulation")
+    val HN = N / 2
+    val CN = HN + HN / 2
+    val w = new PixelWindow(N / 2 * s - 1, N / 2 * s - 1, "Fluid Simulation")
     var t = 0.0
 
     def update(): Unit = {
-        for(cy <- -1 to 1; cx <- -1 to 1) fluid.addDensity((N / 2) + cx, (N / 2) + cy)(500)
-        fluid.addVelocity(N / 2, N / 2)(Math.cos(t.toRadians), Math.sin(t.toRadians))
+        for(cy <- -1 to 1; cx <- -1 to 1) fluid.addDensity((CN) + cx, (CN) + cy)(200)
+        fluid.addVelocity(CN, CN)(Math.cos(t), Math.sin(t))
         fluid.step
-        t += 0.01
+        t += 0.1
     }
 
     def drawDensity(): Unit = {
         for(i <- 0 until N; j <- 0 until N){
             val C = limit(fluid.density(i)(j), 0, 255).toInt
-            w.fill(i * s, j * s, s, s, new Color(C, C, C))
+            w.fill(i * s - (HN * s), j * s - (HN * s), s, s, new Color(C, C, C))
         }
     }
 
     def drawVelocity(): Unit = {
-        val velRes = 1
+        val velRes = 4
         for(i <- 0 until N by velRes; j <- 0 until N by velRes){
-            val x = limit(fluid.velocityX(i)(j), 0, velRes * 2).toInt
-            val y = limit(fluid.velocityY(i)(j), 0, velRes * 2).toInt
+            val x = limit(fluid.velocityX(i)(j), 0, velRes * 8).toInt
+            val y = limit(fluid.velocityY(i)(j), 0, velRes * 8).toInt
             w.line(i * s, j * s, x + i * s, y + j * s, java.awt.Color.RED)
         }
     }
@@ -48,8 +50,9 @@ case class FluidWindow(fluid: Fluid, N: Int, s: Int){
         } 
         update
         drawDensity
+        //drawVelocity
         val elapsed = System.currentTimeMillis - t0
-        println(elapsed)
+        //println(elapsed)
         Thread.sleep((NextStepDelay - elapsed) max 0)
     }
 
