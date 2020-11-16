@@ -1,16 +1,15 @@
 package nlp
 
 object Main {
-  val defaultUrl = "https://fileadmin.cs.lth.se/pgk/skattkammaron.txt"
+  val skatt = "https://fileadmin.cs.lth.se/pgk/skattkammaron.txt"
+  val inferno = "https://fileadmin.cs.lth.se/pgk/inferno.txt"
+  val pride = "https://fileadmin.cs.lth.se/pgk/prideandprejudice.txt"
   val defaultN = 10
 
-  def top(n: Int, freqMap: Map[String, Int]): Vector[(String, Int)] = {
-    freqMap.toVector.sortBy(_._2).reverse.take(n)
-  }
+  def top(n: Int, freqMap: Map[String, Int]): Vector[(String, Int)] = freqMap.toVector.sortBy(_._2).reverse.take(n)
 
   def report(text: Text, from: String, n: Int): String = {
-    val longestWordsWithLength =
-      top(n, text.distinct.map(w => (w, w.length)).toMap).mkString(", ")
+    val longestWordsWithLength = top(n, text.distinct.map(w => (w, w.length)).toMap).mkString(", ")
     s"""
     |Källa: $from
     |
@@ -25,11 +24,12 @@ object Main {
   }
 
   def main(args: Array[String]): Unit = {
-    val location = if (args.isEmpty) defaultUrl else args(0)
+    val location = if (args.isEmpty) skatt else args(0)
     val n = if (args.length < 2) defaultN else args(1).toInt
     val text =
       if (location.startsWith("http")) Text.fromURL(location)
       else Text.fromFile(location)
     println(report(text, location, n))
+    //println(top(3, text.followFreq("han")), top(3, text.followFreq("hon")))
   }
 }

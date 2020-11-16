@@ -1,7 +1,7 @@
 package fluid
 
-class Fluid(dt: Double, diff: Double, visc: Double){
-    val N = Main.resolution
+class Fluid(dt: Double, diff: Double, visc: Double, res: Int, iter: Int){
+    val N = res
     val N1 = N - 1
     val N2 = N - 2
     val s =          Array.fill(N, N)(0.0)
@@ -10,7 +10,6 @@ class Fluid(dt: Double, diff: Double, visc: Double){
     val velocityY =  Array.fill(N, N)(0.0)
     val velocity0X = Array.fill(N, N)(0.0)
     val velocity0Y = Array.fill(N, N)(0.0)
-    val iter = Main.iterations
 
     def addDensity (x: Int, y: Int)(amount: Double): Unit = density(x)(y)  = density(x)(y)  + amount
     def addVelocity(x: Int, y: Int)(amountX: Double, amountY: Double): Unit = {
@@ -22,9 +21,11 @@ class Fluid(dt: Double, diff: Double, visc: Double){
         diffuse(1, velocity0X, velocityX, visc, dt)
         diffuse(2, velocity0Y, velocityY, visc, dt)
         project(velocity0X, velocity0Y, velocityX, velocityY)
+
         advect(1, velocityX, velocity0X, velocity0X, velocity0Y, dt)
         advect(2, velocityY, velocity0Y, velocity0X, velocity0Y, dt)
         project(velocityX, velocityY, velocity0X, velocity0Y)
+
         diffuse(0, s, density, diff, dt)
         advect(0, density, s, velocityX, velocityY, dt)
     }
@@ -37,11 +38,15 @@ class Fluid(dt: Double, diff: Double, visc: Double){
             if (x > N2 + 0.5) x = N2 + 0.5
             if (y < 0.5) y = 0.5
             if (y > N2 + 0.5) y = N2 + 0.5
+            val x0 = Math.floor(x)
+            val x1 = x - x0
+            val x2 = 1.0 - x1
+            val y0 = Math.floor(y)
+            val y1 = y - y0
+            val y2 = 1.0 - y1
             d(i)(j) = 
-                (1.0 - x - Math.floor(x)) * 
-                ((1.0 - (y - Math.floor(y))) * d0(Math.floor(x).toInt)( Math.floor(y).toInt) + (y - Math.floor(y)) * d0(Math.floor(x).toInt)((Math.floor(y) + 1.0).toInt)) + 
-                (x - Math.floor(x)) * 
-                ((1.0 - (y - Math.floor(y))) * d0((Math.floor(x) + 1.0).toInt)(Math.floor(y).toInt) + (y - Math.floor(y)) * d0((Math.floor(x) + 1.0).toInt)((Math.floor(y) + 1.0).toInt))
+                x2 * (y2 * d0(x0.toInt)(y0.toInt) + y1 * d0(x0.toInt)((y0 + 1.0).toInt)) + 
+                x1 * (y2 * d0((x0 + 1.0).toInt)(y0.toInt) + y1 * d0((x0 + 1.0).toInt)((y0 + 1.0).toInt))
         }
 
         setBoundries(b, d)
@@ -81,12 +86,12 @@ class Fluid(dt: Double, diff: Double, visc: Double){
 
     def setBoundries(b: Int, xs: Array[Array[Double]]): Unit = {
         for (i <- 1 until N1) {
-            xs(i)(0) = if(b == 2) -xs(i)(1) else xs(i)(1)
-            xs(i)(N1) = if(b == 2) -xs(i)(N2) else xs(i)(N2)
+            xs(i)(0) = if(b == 2) xs(i)(1) else -xs(i)(1)
+            xs(i)(N1) = if(b == 2) xs(i)(N2) else -xs(i)(N2)
         }
         for (j <- 1 until N1) {
-            xs(0)(j) = if(b == 1) -xs(1)(j) else xs(1)(j)
-            xs(N1)(j) = if(b == 1) -xs(N2)(j) else xs(N2)(j)
+            xs(0)(j) = if(b == 1) xs(1)(j) else -xs(1)(j)
+            xs(N1)(j) = if(b == 1) xs(N2)(j) else -xs(N2)(j)
         }
 
         xs(0)(0) = 0.5 * (xs(1)(0) + xs(0)(1))

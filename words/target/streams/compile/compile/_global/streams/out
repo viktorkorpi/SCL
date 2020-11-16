@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/pear/Desktop/programs/SCALA/words/Text.scala:25:44: value += is not a member of nlp.FreqMapBuilder[0m
-[0m[[0m[31merror[0m] [0m[0m  Expression does not convert to assignment because:[0m
-[0m[[0m[31merror[0m] [0m[0m    value add is not a member of object nlp.FreqMapBuilder[0m
-[0m[[0m[31merror[0m] [0m[0m    expansion: result.update(key, result.apply(key).$plus(FreqMapBuilder.<add: error>(next)))[0m
-[0m[[0m[31merror[0m] [0m[0m      if(result.contains(key)) result(key) += FreqMapBuilder.add(next)[0m
-[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pear/Desktop/programs/SCALA/words/Main.scala:6:5: ')' expected but string literal found.[0m
+[0m[[0m[31merror[0m] [0m[0m    "inferno" -> "https://fileadmin.cs.lth.se/pgk/inferno.txt"[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

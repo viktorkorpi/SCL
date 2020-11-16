@@ -5,3 +5,5 @@ compile
 run
 compile
 run
+run inferno
+run
