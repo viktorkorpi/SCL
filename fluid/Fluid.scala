@@ -81,10 +81,12 @@ class Fluid(dt: Double, diff: Double, visc: Double, res: Int, iter: Int){
             xs(i)(0) = if(b == 2) xs(i)(1) else -xs(i)(1)
             xs(i)(N1) = if(b == 2) xs(i)(N2) else -xs(i)(N2)
         }
+
         for (j <- 1 until N1) {
             xs(0)(j) = if(b == 1) xs(1)(j) else -xs(1)(j)
             xs(N1)(j) = if(b == 1) xs(N2)(j) else -xs(N2)(j)
         }
+        
         xs(0)(0) = 0.5 * (xs(1)(0) + xs(0)(1))
         xs(0)(N1) = 0.5 * (xs(1)(N1) + xs(0)(N2))
         xs(N1)(0) = 0.5 * (xs(N2)(0) + xs(N1)(1))

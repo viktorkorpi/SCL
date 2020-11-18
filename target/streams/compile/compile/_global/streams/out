@@ -1,31 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\life2.scala:12:38: value w is not a member of WindowLife[0m
-[0m[[0m[31merror[0m] [0m[0m    var grid = Array.tabulate(window.w.width / block_size)(n => Array.tabulate(window.w.height / block_size)(n => rnd.nextInt(2)))[0m
-[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\life2.scala:12:87: value w is not a member of WindowLife[0m
-[0m[[0m[31merror[0m] [0m[0m    var grid = Array.tabulate(window.w.width / block_size)(n => Array.tabulate(window.w.height / block_size)(n => rnd.nextInt(2)))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\life2.scala:16:27: value w is not a member of WindowLife[0m
-[0m[[0m[31merror[0m] [0m[0m        Array.fill(window.w.width / block_size)(Array.fill(window.w.height / block_size)(0))[0m
-[0m[[0m[31merror[0m] [0m[0m                          ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\life2.scala:16:67: value w is not a member of WindowLife[0m
-[0m[[0m[31merror[0m] [0m[0m        Array.fill(window.w.width / block_size)(Array.fill(window.w.height / block_size)(0))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                  ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\life2.scala:22:44: value w is not a member of WindowLife[0m
-[0m[[0m[31merror[0m] [0m[0m                if(grid(x)(y) == 1) window.w.fill(x * block_size, y * block_size, block_size, block_size, java.awt.Color.black)[0m
-[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\life2.scala:23:29: value w is not a member of WindowLife[0m
-[0m[[0m[31merror[0m] [0m[0m                else window.w.fill(x * block_size, y * block_size, block_size, block_size, java.awt.Color.white)  [0m
-[0m[[0m[31merror[0m] [0m[0m                            ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\life2.scala:35:56: value w is not a member of WindowLife[0m
-[0m[[0m[31merror[0m] [0m[0m                            var nx = (x + cx + (window.w.width / block_size)) % (window.w.width / block_size)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\life2.scala:35:89: value w is not a member of WindowLife[0m
-[0m[[0m[31merror[0m] [0m[0m                            var nx = (x + cx + (window.w.width / block_size)) % (window.w.width / block_size)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                        ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\life2.scala:36:56: value w is not a member of WindowLife[0m
-[0m[[0m[31merror[0m] [0m[0m                            var ny = (y + cy + (window.w.height / block_size)) % (window.w.height / block_size)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\life2.scala:36:90: value w is not a member of WindowLife[0m
-[0m[[0m[31merror[0m] [0m[0m                            var ny = (y + cy + (window.w.height / block_size)) % (window.w.height / block_size)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m10 errors found[0m
+[0m[[0m[33mwarn[0m] [0m[0m1 deprecation[0m
+[0m[[0m[33mwarn[0m] [0m[0m1 deprecation (since 2.13.3)[0m
+[0m[[0m[33mwarn[0m] [0m[0m2 deprecations in total; re-run with -deprecation for details[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m

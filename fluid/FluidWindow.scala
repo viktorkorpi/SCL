@@ -6,7 +6,7 @@ import java.awt.Color
 case class FluidWindow(fluid: Fluid, N: Int, s: Int){
     val HN = N / 2
     val CN = HN + HN / 2
-    val w = new PixelWindow(N / 2 * s - 1, N / 2 * s - 1, "Fluid Simulation")
+    val w = new PixelWindow(HN * s - s, HN * s - s, "Fluid Simulation")
     var t = 0.0
 
     def update(): Unit = {
@@ -24,10 +24,9 @@ case class FluidWindow(fluid: Fluid, N: Int, s: Int){
     }
 
     def drawVelocity(): Unit = {
-        val velRes = 4
-        for(i <- 0 until N by velRes; j <- 0 until N by velRes){
-            val x = limit(fluid.velocityX(i)(j), 0, velRes * 8).toInt
-            val y = limit(fluid.velocityY(i)(j), 0, velRes * 8).toInt
+        for(i <- 0 until N; j <- 0 until N){
+            val x = limit(fluid.velocityX(i)(j), 0, s).toInt
+            val y = limit(fluid.velocityY(i)(j), 0, s).toInt
             w.line(i * s, j * s, x + i * s, y + j * s, java.awt.Color.RED)
         }
     }
@@ -36,7 +35,7 @@ case class FluidWindow(fluid: Fluid, N: Int, s: Int){
 
     var quit = false
     val EventMaxWait = 1
-    val NextStepDelay = 100
+    val NextStepDelay = 30
     def loop(): Unit = while(!quit) {
         val t0 = System.currentTimeMillis 
         w.awaitEvent(EventMaxWait)

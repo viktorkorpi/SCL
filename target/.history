@@ -69,3 +69,6 @@ run
 compile
 run
 compile
+run mandelbrot
+3
+run

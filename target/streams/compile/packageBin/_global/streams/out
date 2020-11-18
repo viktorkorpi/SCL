@@ -1,27 +1,5 @@
 [0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\scala_2.13-0.1.0-SNAPSHOT.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	base[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\base[0m
-[0m[[0m[0mdebug[0m] [0m[0m	base\Base$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\base\Base$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	base\Base.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\base\Base.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	base\Window$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\base\Window$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	base\Window$Event$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\base\Window$Event$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	base\Window$Event$EventType.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\base\Window$Event$EventType.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	base\Window$Event$KeyPressed$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\base\Window$Event$KeyPressed$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	base\Window$Event$KeyPressed.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\base\Window$Event$KeyPressed.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	base\Window$Event$Undefined$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\base\Window$Event$Undefined$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	base\Window$Event$WindowClosed$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\base\Window$Event$WindowClosed$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	base\Window.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\base\Window.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	blockbattle[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\blockbattle[0m
 [0m[[0m[0mdebug[0m] [0m[0m	blockbattle\BlockWindow$.class[0m
@@ -90,34 +68,18 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\Irritext$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Irritext.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\Irritext.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	irritext2$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\irritext2$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	irritext2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\irritext2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Life$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\Life$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Life.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\Life.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Life2$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\Life2$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Life2.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\Life2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Mandelbrot$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\Mandelbrot$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Mandelbrot.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\Mandelbrot.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ProjectName$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\ProjectName$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	ProjectName.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\ProjectName.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	sphere$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\sphere$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	sphere$Point.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\sphere$Point.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	sphere.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\sphere.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Window.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\Window.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	WindowLife.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\target\scala-2.13\classes\WindowLife.class[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

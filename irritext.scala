@@ -1,4 +1,4 @@
-object irritext2{
+object irritext{
     var rnd = new scala.util.Random()
     var p = 0
     
