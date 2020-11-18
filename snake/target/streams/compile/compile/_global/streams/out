@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Program Files (x86)\Programs\SCALA\snake\Apple.scala:3:7: class Apple needs to be abstract.[0m
+[0m[[0m[31merror[0m] [0m[0mMissing implementations for 2 members. Stub implementations follow:[0m
+[0m[[0m[31merror[0m] [0m[0m  def game: snake.SnakeGame = ???[0m
+[0m[[0m[31merror[0m] [0m[0m  def teleportAfterSteps: Int = ???[0m
+[0m[[0m[31merror[0m] [0m[0mclass Apple extends CanTeleport {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

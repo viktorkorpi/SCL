@@ -1,0 +1,69 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\snake_2.13-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\CanMove.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\CanMove.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\CanTeleport.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\CanTeleport.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Colors$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Colors$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Colors.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Colors.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Dim$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Dim$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Dim.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Dim.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Dir.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Dir.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\East$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\East$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\East.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\East.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Entity.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Entity.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\North$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\North$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\North.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\North.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\OnePlayerGame.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\OnePlayerGame.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Pair.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Pair.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Player$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Player$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Player.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Player.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Pos$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Pos$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Pos.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Pos.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\Snake.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\Snake.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\SnakeGame$GameOver$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\SnakeGame$GameOver$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\SnakeGame$Playing$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\SnakeGame$Playing$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\SnakeGame$Quitting$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\SnakeGame$Quitting$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\SnakeGame$Starting$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\SnakeGame$Starting$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\SnakeGame$State.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\SnakeGame$State.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\SnakeGame.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\SnakeGame.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\South$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\South$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\South.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\South.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\TwoPlayerGame.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\TwoPlayerGame.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\West$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\West$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	snake\West.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Program Files (x86)\Programs\SCALA\snake\target\scala-2.13\classes\snake\West.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
